@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Press Pathivara – Quality Printing Solutions</title>
   <meta name="description" content="Press Pathivara: books, wedding cards, visiting cards, flex banners, bill books, packaging and more. Get a quick quote.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,6 +20,7 @@
         <li><a href="#why">Why Us</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><button class="lang-btn" id="langBtn" aria-label="Change language">नेपाली</button></li>
         <li><button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">🌙</button></li>
       </ul>
       <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
@@ -138,6 +141,18 @@
   <footer>
     <div class="container">© <span id="year"></span> Press Pathivara. All rights reserved.</div>
   </footer>
+
+  <div class="lang-modal" id="langModal" role="dialog" aria-modal="true" aria-labelledby="langTitle" hidden>
+    <div class="lang-box">
+      <div class="lang-icon">🖨️</div>
+      <h2 id="langTitle">Choose your language</h2>
+      <p>भाषा छान्नुहोस्</p>
+      <div class="lang-actions">
+        <button class="btn" data-lang="en">English</button>
+        <button class="btn" data-lang="ne">नेपाली</button>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
