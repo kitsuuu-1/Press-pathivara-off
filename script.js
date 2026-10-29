@@ -14,7 +14,7 @@ function applyTheme(t) {
 }
 let saved = null;
 try { saved = localStorage.getItem('theme'); } catch (e) {}
-applyTheme(saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+applyTheme(saved || 'light');
 themeBtn.addEventListener('click', () => {
   const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
   applyTheme(next);
