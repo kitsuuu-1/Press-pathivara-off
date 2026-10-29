@@ -157,5 +157,5 @@ footer { padding: 32px 0; text-align: center; color: var(--muted); border-top: 1
 @media (prefers-reduced-motion: reduce) { .lang-box { animation: none; } }
 
 /* Logo */
-.logo img { width: 46px; height: 46px; border-radius: 50%; background: #fff; object-fit: cover; }
-.lang-logo { width: 96px; height: 96px; border-radius: 50%; background: #fff; margin-bottom: 14px; }
+.logo img { width: 46px; height: 46px; object-fit: contain; }
+.lang-logo { width: 96px; height: 96px; margin-bottom: 14px; }
